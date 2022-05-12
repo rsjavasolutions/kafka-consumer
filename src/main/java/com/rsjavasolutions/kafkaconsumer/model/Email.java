@@ -1,12 +1,12 @@
 package com.rsjavasolutions.kafkaconsumer.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Set;
 
-@Getter
-@Setter
-@ToString
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Email {
@@ -14,4 +14,5 @@ public class Email {
     private String content;
 
     private Set<String> addresses;
+
 }
